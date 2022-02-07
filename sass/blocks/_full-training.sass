@@ -1,0 +1,85 @@
+.full-training
+  margin-top: 80px
+  &__title
+    text-align: center
+  &__cards-container
+    display: grid
+    grid-template-columns: repeat(4, minmax(251px, 1fr))
+    grid-template-rows: 85px minmax(248px, 1fr)
+    grid-template-areas: "num-1 num-2 num-3 num-4" "first-pic second-pic third-pic fourth-pic"
+    grid-row-gap: 20px
+    grid-column-gap: 60px
+  &__picture
+    border-radius: 8px
+    &--1
+      grid-area: first-pic
+      justify-self: center
+    &--2
+      grid-area: second-pic
+      justify-self: center
+    &--3
+      grid-area: third-pic
+      justify-self: center
+    &--4
+      grid-area: fourth-pic
+      justify-self: center
+  &__cards-number--1
+    grid-area: num-1
+    font-family: 'Muller', sans-serif
+    font-weight: bold
+    font-size: 120px
+    line-height: 150px
+    text-align: center
+    color: #C4C4C4
+  &__cards-number--2
+    grid-area: num-2
+    font-family: 'Muller', sans-serif
+    font-weight: bold
+    font-size: 120px
+    line-height: 150px
+    text-align: center
+    color: #C4C4C4
+  &__cards-number--3
+    grid-area: num-3
+    font-family: 'Muller', sans-serif
+    font-weight: bold
+    font-size: 120px
+    line-height: 150px
+    text-align: center
+    color: #C4C4C4
+  &__cards-number--4
+    grid-area: num-4
+    font-family: 'Muller', sans-serif
+    font-weight: bold
+    font-size: 120px
+    line-height: 150px
+    text-align: center
+    color: #C4C4C4
+  &__text
+    font-style: normal
+    font-weight: normal
+    font-size: 26px
+    line-height: 150%
+    color: $text
+  &__quote-container
+    position: relative
+    margin-top: 93px
+    border: 2px solid $primary
+    border-radius: 8px
+    &-text
+      font-style: normal
+      font-weight: normal
+      font-size: 26px
+      line-height: 150%
+      color: $text
+      padding: 60px 26px 0 26px
+  &__coach-picture
+    position: absolute
+    margin-left: auto
+    margin-right: auto
+    left: 0
+    right: 0
+    text-align: center
+    transform: translateY(-70px)
+  &__coach-image
+    border-radius: 100%

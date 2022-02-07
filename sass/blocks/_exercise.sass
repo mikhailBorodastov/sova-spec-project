@@ -1,0 +1,91 @@
+.exercise-1
+  margin-top: 80px
+  &__container
+    display: grid
+    grid-template-columns: repeat(2, 1fr)
+    grid-column-gap: 67px
+    grid-template-areas: "video description" "important important"
+  &__video-container
+    grid-area: video
+    width: 100%
+    max-width: 747px
+  &__description-container
+    display: grid
+    grid-template-rows: 78px minmax(159px, 1fr) 245px
+    grid-area: description
+  &__title
+    align-self: start
+    margin: 0
+  &__description
+    font-style: normal
+    font-weight: normal
+    font-size: 26px
+    line-height: 150%
+    color: $text
+    margin: 0
+  &__coach-picture
+    border-radius: 100px
+  &__quote-container
+    display: grid
+    grid-template-columns: 135px 31px 580px
+    grid-template-rows: minmax(180px, 1fr) 57px
+    grid-template-areas: "picture line quote" "name name name"
+    margin-top: 42px
+  &__coach-picture
+    grid-area: picture
+    align-self: center
+  &__line
+    position: relative
+    grid-area: line
+    height: 150px
+    width: 3px
+    background-color: $primary
+    border-radius: 99px
+    margin: 0 20px
+    align-self: center
+    justify-self: center
+    transform: revert
+    &::before
+      content: ""
+      position: absolute
+      background-image: url("../../assets/images/exercise/quotes.svg")
+      width: 34px
+      height: 47px
+      bottom: 156px
+      left: -14px
+      opacity: 50%
+      background-repeat: no-repeat
+      background-size: cover
+  &__quote-text
+    grid-area: quote
+    position: relative
+    font-style: normal
+    font-weight: bold
+    font-size: 24px
+    line-height: 150%
+    color: $text
+    align-self: center
+  &__coach-name
+    grid-area: name
+    justify-self: end
+    font-family: Muller, sans-serif
+    font-style: italic
+    font-weight: normal
+    font-size: 16px
+    line-height: 150%
+  &__important-container
+    grid-area: important
+  &__important-text
+    padding: 17px 0 17px 35px
+    border: $primary 2px solid
+    border-radius: 8px
+    font-style: normal
+    font-weight: bold
+    font-size: 34px
+    line-height: 150%
+    color: $text
+.coach-image
+  border-radius: 100px
+iframe
+  height: 100%
+  width: 100%

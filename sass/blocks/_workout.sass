@@ -1,0 +1,58 @@
+.workout
+  margin-top: 41px
+  &__wrapper
+    display: grid
+    grid-template-columns: repeat(2, 1fr)
+    grid-template-rows: 1fr auto
+    grid-template-areas: "info image" "further image"
+  &__text-info-container
+    grid-area: info
+  &__further-info-wrapper
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr
+    grid-area: further
+    align-items: center
+  &__image-container
+    grid-area: image
+    align-self: self-end
+    justify-self: center
+  &__advantages-icon
+    width: 30px
+    height: 30px
+  &__advantages-icon-up
+    width: 37px
+  &__advantages-container
+    display: grid
+    grid-row-gap: 32px
+    margin: 105px 0
+  &__advantages-text
+    display: block
+    margin-left: 11px
+  &__advantages-list
+    display: grid
+    grid-template-columns: 30px auto
+    grid-column-gap: min(11px)
+  &__advantages-text
+    align-self: center
+    font-family: Muller, sans-serif
+    font-style: normal
+    font-weight: 500
+    font-size: 28px
+    line-height: 33px
+  &__learn-more-container
+    display: grid
+    grid-template-columns: 37px 1fr
+    align-items: center
+    grid-column-gap: 16px
+  &__learn-more-text
+    font-family: Muller, sans-serif
+    font-style: normal
+    font-weight: 500
+    font-size: 24px
+    line-height: 24px
+    color: $primary
+  &__icon
+    width: 36px
+.download-appstore
+  width: 232px&
+  height: 71px
